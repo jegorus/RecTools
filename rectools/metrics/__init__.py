@@ -40,6 +40,8 @@ Tools
 """
 
 from .classification import Accuracy, Precision, Recall
+from .classification import MCC, Accuracy, F1Beta, Precision, Recall
+from .coverage import ItemCoverage, NumRetrieved
 from .distances import (
     PairwiseDistanceCalculator,
     PairwiseHammingDistanceCalculator,
@@ -58,6 +60,9 @@ __all__ = (
     "MAP",
     "NDCG",
     "MRR",
+    "LAUC",
+    "ItemCoverage",
+    "NumRetrieved",
     "MeanInvUserFreq",
     "IntraListDiversity",
     "Serendipity",
